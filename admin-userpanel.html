@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="">
+    <title>WEB TITLE</title>
+
+    <!-- plugin css start -->
+        <link rel="stylesheet" type="text/css" media="" href="plugs/slick-1.6.0.css" />
+        <!-- <link rel="stylesheet" type="text/css" media="" href="plugs/jquery.dataTables.min.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" media="" href="plugs/dataTables.semanticui.min.css" /> -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.semanticui.min.css"> -->
+
+
+    <!-- plugin css end   -->
+    <!-- local css start -->
+        <!-- <link rel="stylesheet" type="text/css" media="" href="styles/css/global.min.css" /> -->
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 1050px)" href="styles/css/main_desktop.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 1049px)" href="styles/css/main_mobile.min.css" />
+    <!-- local css end   -->
+</head>
+<body>
+    <div id="sideNav">
+        <div class="nav-module top">
+            3N Dash
+        </div>
+        <div class="nav-module middle">
+            <div class="module-title">
+                Module Title
+            </div>
+            <ul class="main-ul">
+                <li class="active">
+                    <img src="img/icons/home.png" alt="" class="img-thumb">
+                    <a href="#">Home</a>
+                </li>
+                <li class="">
+                    <img src="img/icons/username.png" alt="" class="img-thumb">
+                    <a href="#">User Panel</a>
+                </li>
+                <li class="">
+                    <img src="img/icons/cash.png" alt="" class="img-thumb">
+                    <a href="#">Transaction History</a>
+                </li>
+                <li class="master-menu">
+                    <img src="img/icons/promo.png" alt="" class="img-thumb">
+                    <a href="#">Promo List</a>
+                </li>
+                <li class="master-menu">
+                    <img src="img/icons/ico-add.png" alt="" class="img-thumb">
+                    <a href="#">Admin List</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="topNav">
+        <div class="container">
+            <div class="nav-module">
+                <a class="notif-module trans" href="#">
+                    <img src="img/icons/cash.png" alt="">
+                    New Transaction
+                    <span class="notif-val">1</span>
+                </a>
+                <a class="notif-module mem" href="#">
+                    <img src="img/icons/username.png" alt="">
+                    New Member
+                    <span class="notif-val">0</span>
+                </a>
+            </div>
+            <div class="nav-module user-nav">
+                <div class="avatar-box">
+                    <img src="img/etc/avatar.jpg" alt="">
+                </div>
+                <div class="username-button">
+                    Chow Yun Fat
+                    <span class="admin-type">
+                        Master Admin
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mainContent">
+        <div class="container">
+            <!-- <div class="module-parent" id="mainModule">
+                <div class="flex-module w25">
+                    <div class="module-title">
+                        Today's Summary
+                    </div>
+                    <div class="module-container">
+                        asd
+                    </div>
+                </div>
+
+                <div class="flex-module w25">
+                    <div class="module-title">
+                        Recent Transaction
+                    </div>
+                    <div class="module-container">
+                        asd
+                    </div>
+                </div>
+
+                <div class="flex-module w45">
+                    <div class="module-title">
+                        Top Transaction
+                    </div>
+                    <div class="module-container">
+                        asd
+                    </div>
+                </div>
+
+            </div> -->
+            <!-- <div class="flex-module w100" id="liveScore">
+                <iframe src="http://www.nowgoal.id/asianbookie.htm" width="100%" height="500" frameborder="0"></iframe>
+            </div> -->
+
+            <div class="module-parent">
+                <div class="flex-module w28" id="memberDetail">
+                    <div class="module-title sep">
+                        Member Details
+                        <div class="title-functions">
+                            <div class="function-module edit-form">
+                                <img src="img/icons/edit.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module-container">
+                        <form action="" class="edit-linked">
+                            <div class="form-group">
+                                <div class="caption">Name :</div>
+                                <input type="text" class="full-input value" value="Basuki Purnama" readonly>
+                            </div>
+                            <div class="form-group">
+                                <div class="caption">Username :</div>
+                                <input type="text" class="full-input value" value="Ahok123" readonly>
+                            </div>
+                            <div class="form-group">
+                                <div class="caption">Phone Num. :</div>
+                                <input type="text" class="full-input value" value="+6212891238" readonly>
+                            </div>
+                            <div class="form-group">
+                                <div class="caption">Email :</div>
+                                <input type="text" class="full-input value" value="ahok@gmail.com" readonly>
+                            </div>
+                            <div class="form-group">
+                                <div class="caption">Points :</div>
+                                <input type="text" class="full-input value" value="500 pts" readonly>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Save" class="generic-btn">
+                                <div class="generic-btn red">Cancel</div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="flex-module w28">
+                    <div class="module-title sep">
+                        Link Account
+                    </div>
+                    <form action="" class="module-container quick-form">
+                        <div class="form-group">
+                            <div class="caption">User ID :</div>
+                            <input type="text" class="full-input">
+                        </div>
+                        <div class="form-group">
+                            <div class="caption">Password :</div>
+                            <input type="text" class="full-input">
+                        </div>
+                        <div class="form-group">
+                            <div class="caption">Product :</div>
+                            <select name="" id="" class="full-input">
+                                <option value="SBO">SBO</option>
+                                <option value="Vivawin">Vivawin</option>
+                                <option value="IBC">IBCBET</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="caption">Bank Acc. :</div>
+                            <div class="group">
+                                <select name="" id="" class="sm-input">
+                                    <option value="BCA">Mandiri</option>
+                                    <option value="BNI">BNI</option>
+                                </select>
+                                <input type="text" class="md-input" placeholder="Rekening">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="caption">Bank Name :</div>
+                            <input type="text" class="full-input">
+                        </div>
+                        <div class="form-group">
+                            <input type="Submit" name="Submit" class="form-submit">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="flex-module w40">
+
+                </div>
+            </div>
+
+            <div class="module-parent" id="transactionModule">
+                <div class="flex-module w100">
+                    <div class="module-title sep">
+                        Recent Transaction History of Ahok123
+                        <div class="title-functions">
+                            <div class="function-module add addTransBtn">
+                                + Add Transaction
+                            </div>
+                            <div class="function-module">
+                                View All
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dataTables-parent">
+                        <table id="transactionTable" class="ui celled table" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Assoc. Acc.</th>
+                                    <th>Bank Acc.</th>
+                                    <th>Transaction</th>
+                                    <th>Time</th>
+                                    <th>Amount</th>
+                                    <th>Promo</th>
+                                    <th>Final Amt.</th>
+                                    <th>Bonus Pts</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Assoc. Acc.</th>
+                                    <th>Bank Acc.</th>
+                                    <th>Transaction</th>
+                                    <th>Time</th>
+                                    <th>Amount</th>
+                                    <th>Promo</th>
+                                    <th>Final Amt.</th>
+                                    <th>Bonus Pts</th>
+                                    <th>Status</th>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <tr>
+                                    <td class="username"><a href="admin-userpanel.html">Ahok123</a></td>
+                                    <td>SBOBET (akb30002)</td>
+                                    <td>BCA <span class="bank">123810239</span></td>
+                                    <td>Withdrawal</td>
+                                    <td>05/01/2018 - 23:59</td>
+                                    <td>5,000,000</td>
+                                    <td>+10% (zxczxc123)</td>
+                                    <td>5,500,000</td>
+                                    <td>500</td>
+                                    <td class="status pending">No</td>
+                                </tr>
+                                <tr>
+                                    <td class="username"><a href="admin-userpanel.html">Ahok123</a></td>
+                                    <td>SBOBET (akb30002)</td>
+                                    <td>BCA <span class="bank">123810239</span></td>
+                                    <td>Deposit</td>
+                                    <td>07/01/2018 - 21:59</td>
+                                    <td>5,000,000</td>
+                                    <td>+10% (zxczxc123)</td>
+                                    <td>5,500,000</td>
+                                    <td>500</td>
+                                    <td class="status confirmed">Yes <span class="u-admin">(by Admin1)</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module-parent" id="linkedAccounts">
+                <div class="flex-module w70">
+                    <div class="module-title sep">
+                        Linked Accounts
+                        <div class="title-functions">
+                            <!-- <div class="function-module add">
+                                + Add Transaction
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="dataTables-parent">
+                        <table id="linkedAccTable" class="ui celled table" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Assoc. Acc.</th>
+                                    <th>Depo Acc.</th>
+                                    <th>Member Since</th>
+                                    <th>Type</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th>Assoc. Acc.</th>
+                                    <th>Depo Acc.</th>
+                                    <th>Member Since</th>
+                                    <th>Type</th>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <tr>
+                                    <td>SBOBET (akb30001)</td>
+                                    <td>BCA <span class="bank">812398</span></td>
+                                    <td>05/01/2018</td>
+                                    <td class="Normal">Normal</td>
+                                </tr>
+                                <tr>
+                                    <td>SBOBET (akb30002)</td>
+                                    <td>BCA <span class="bank">812398</span></td>
+                                    <td>07/01/2018</td>
+                                    <td class="VIP">VIP</td>
+                                </tr>
+                                <tr>
+                                    <td>SBOBET (akb30003)</td>
+                                    <td>BCA <span class="bank">812398</span></td>
+                                    <td>05/01/2018</td>
+                                    <td class="Normal">Normal</td>
+                                </tr>
+                                <tr>
+                                    <td>SBOBET (akb30004)</td>
+                                    <td>BCA <span class="bank">812398</span></td>
+                                    <td>07/01/2018</td>
+                                    <td class="VIP">VIP</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<div class="popup-parent" id="addTransPopup">
+    <div class="popup-fader"></div>
+    <div class="popup-content">
+        <form action="" id="addTransactionForm" class="quick-form">
+            <div class="form-title">
+                Add Transaction
+            </div>
+            <div class="form-group">
+                <div class="caption">User ID :</div>
+                <input type="text" class="full-input" value="Ahok123">
+            </div>
+            <div class="form-group">
+                <div class="caption">Assoc. Id :</div>
+                <div class="group">
+                    <select name="" id="" class="sm-input">
+                        <option value="SBO">SBO</option>
+                        <option value="IBC">IBC</option>
+                    </select>
+                    <input type="text" class="md-input" placeholder="eg. akb30002">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="caption">Amount :</div>
+                <input class="full-input commaSep" placeholder="IDR" type="text" step='100'>
+            </div>
+            <div class="form-group">
+                <div class="caption">Type :</div>
+                <select name="" id="" class="full-input">
+                    <option value="Deposit">Deposit</option>
+                    <option value="Withdraw">Withdraw</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <div class="caption">Bank Acc. :</div>
+                <div class="group">
+                    <select name="" id="" class="sm-input">
+                        <option value="BCA">Mandiri</option>
+                        <option value="BNI">BNI</option>
+                    </select>
+                    <input type="text" class="md-input" placeholder="Rekening Player">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="caption">Acc. Name :</div>
+                <input type="text" class="full-input">
+            </div>
+
+            <div class="form-group">
+                <div class="caption" >Depo Acc. :</div>
+                <div class="group">
+                    <select name="" id="" class="sm-input">
+                        <option value="BCA">Mandiri</option>
+                        <option value="BNI">BNI</option>
+                    </select>
+                    <input type="text" class="md-input" placeholder="Rekening Deposit">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="caption">Promo Code :</div>
+                <input type="text" class="full-input">
+            </div>
+            <div class="form-group">
+                <input type="Submit" name="Submit" class="form-submit">
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+    <!-- plugin js start -->
+        <script type="text/javascript" src="plugs/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="plugs/slick-1.6.0.min.js"></script>
+        <script type="text/javascript" src="plugs/jquery.dataTables.min.js"></script>
+
+    <!-- plugin js end   -->
+
+    <!-- local js start -->
+        <script type="text/javascript" src="script/jquery.js"></script>
+    <!-- local js end   -->
+</html>
