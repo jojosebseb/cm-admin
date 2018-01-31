@@ -15,6 +15,7 @@ $('.addTransBtn').on('click', function(){
     showPopup('addTransPopup')
 });
 
+
 function showPopup(popupId){
     $('#'+popupId).addClass('active');
 }

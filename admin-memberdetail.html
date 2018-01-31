@@ -84,6 +84,9 @@
     </div>
 
     <div id="mainContent">
+        <div class="splash-banner">
+            Member Details
+        </div>
         <div class="container">
             <!-- <div class="module-parent" id="mainModule">
                 <div class="flex-module w25">
@@ -164,11 +167,7 @@
                     </div>
                     <form action="" class="module-container quick-form">
                         <div class="form-group">
-                            <div class="caption">User ID :</div>
-                            <input type="text" class="full-input">
-                        </div>
-                        <div class="form-group">
-                            <div class="caption">Password :</div>
+                            <div class="caption">Assoc. Acc.. :</div>
                             <input type="text" class="full-input">
                         </div>
                         <div class="form-group">
@@ -194,6 +193,16 @@
                             <input type="text" class="full-input">
                         </div>
                         <div class="form-group">
+                            <div class="caption">Depo Acc. :</div>
+                            <div class="group">
+                                <select name="" id="" class="sm-input">
+                                    <option value="BCA">Mandiri</option>
+                                    <option value="BNI">BNI</option>
+                                </select>
+                                <input type="text" class="md-input" placeholder="Rekening">
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <input type="Submit" name="Submit" class="form-submit">
                         </div>
                     </form>
@@ -207,10 +216,10 @@
             <div class="module-parent" id="transactionModule">
                 <div class="flex-module w100">
                     <div class="module-title sep">
-                        Recent Transaction History of Ahok123
+                        Recent Transaction History
                         <div class="title-functions">
                             <div class="function-module add addTransBtn">
-                                + Add Transaction
+                                <img src="img/icons/ico-add.png" alt=""> New Transaction
                             </div>
                             <div class="function-module">
                                 View All
@@ -224,13 +233,15 @@
                                     <th>Username</th>
                                     <th>Assoc. Acc.</th>
                                     <th>Bank Acc.</th>
-                                    <th>Transaction</th>
+                                    <th>Trans.</th>
+                                    <th>Depo Acc.</th>
                                     <th>Time</th>
                                     <th>Amount</th>
                                     <th>Promo</th>
                                     <th>Final Amt.</th>
                                     <th>Bonus Pts</th>
                                     <th>Status</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tfoot>
@@ -238,39 +249,59 @@
                                     <th>Username</th>
                                     <th>Assoc. Acc.</th>
                                     <th>Bank Acc.</th>
-                                    <th>Transaction</th>
+                                    <th>Trans.</th>
+                                    <th>Depo Acc.</th>
                                     <th>Time</th>
                                     <th>Amount</th>
                                     <th>Promo</th>
                                     <th>Final Amt.</th>
                                     <th>Bonus Pts</th>
                                     <th>Status</th>
+                                    <th></th>
                                 </tr>
                             </tfoot>
                             <tbody>
                                 <tr>
-                                    <td class="username"><a href="admin-userpanel.html">Ahok123</a></td>
+                                    <td class="username"><a href="admin-memberdetail.html">Ahok123</a></td>
                                     <td>SBOBET (akb30002)</td>
                                     <td>BCA <span class="bank">123810239</span></td>
                                     <td>Withdrawal</td>
+                                    <td>BCA <span class="bank">123810239</span></td>
                                     <td>05/01/2018 - 23:59</td>
                                     <td>5,000,000</td>
                                     <td>+10% (zxczxc123)</td>
                                     <td>5,500,000</td>
                                     <td>500</td>
                                     <td class="status pending">No</td>
+                                    <td><div>  <img src="img/icons/edit.png" class="table-edit addTransBtn" alt=""> </div></td>
                                 </tr>
                                 <tr>
-                                    <td class="username"><a href="admin-userpanel.html">Ahok123</a></td>
+                                    <td class="username"><a href="admin-memberdetail.html">Ahok123</a></td>
                                     <td>SBOBET (akb30002)</td>
                                     <td>BCA <span class="bank">123810239</span></td>
                                     <td>Deposit</td>
+                                    <td>BCA <span class="bank">123810239</span></td>
                                     <td>07/01/2018 - 21:59</td>
                                     <td>5,000,000</td>
                                     <td>+10% (zxczxc123)</td>
                                     <td>5,500,000</td>
                                     <td>500</td>
                                     <td class="status confirmed">Yes <span class="u-admin">(by Admin1)</span></td>
+                                    <td><div>  <img src="img/icons/edit.png" class="table-edit addTransBtn" alt=""> </div></td>
+                                </tr>
+                                <tr>
+                                    <td class="username"><a href="admin-memberdetail.html">Rizieq123</a></td>
+                                    <td>SBOBET (akb30003)</td>
+                                    <td>BCA <span class="bank">51324123</span></td>
+                                    <td>Withdraw</td>
+                                    <td>BCA <span class="bank">123810239</span></td>
+                                    <td>05/01/2018 - 21:59</td>
+                                    <td>5,000,000</td>
+                                    <td>+150pts (zxczxc321)</td>
+                                    <td>5,000,000</td>
+                                    <td>650</td>
+                                    <td class="status confirmed">Yes <span class="u-admin">(by Admin2)</span></td>
+                                    <td><div>  <img src="img/icons/edit.png" class="table-edit addTransBtn" alt=""> </div></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -293,43 +324,43 @@
                             <thead>
                                 <tr>
                                     <th>Assoc. Acc.</th>
+                                    <th>Bank Acc.</th>
+                                    <th>Bank Name</th>
                                     <th>Depo Acc.</th>
                                     <th>Member Since</th>
                                     <th>Type</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th>Assoc. Acc.</th>
+                                    <th>Bank Acc.</th>
+                                    <th>Bank Name</th>
                                     <th>Depo Acc.</th>
                                     <th>Member Since</th>
                                     <th>Type</th>
+                                    <th></th>
                                 </tr>
                             </tfoot>
                             <tbody>
                                 <tr>
                                     <td>SBOBET (akb30001)</td>
                                     <td>BCA <span class="bank">812398</span></td>
+                                    <td>Basuki Purnama</td>
+                                    <td>BCA <span class="bank">812398</span></td>
                                     <td>05/01/2018</td>
                                     <td class="Normal">Normal</td>
+                                    <td><a href="#">  <img src="img/icons/edit.png" class="table-edit" alt=""> </a></td>
                                 </tr>
                                 <tr>
                                     <td>SBOBET (akb30002)</td>
                                     <td>BCA <span class="bank">812398</span></td>
-                                    <td>07/01/2018</td>
-                                    <td class="VIP">VIP</td>
-                                </tr>
-                                <tr>
-                                    <td>SBOBET (akb30003)</td>
-                                    <td>BCA <span class="bank">812398</span></td>
-                                    <td>05/01/2018</td>
-                                    <td class="Normal">Normal</td>
-                                </tr>
-                                <tr>
-                                    <td>SBOBET (akb30004)</td>
+                                    <td>Basuki Purnama</td>
                                     <td>BCA <span class="bank">812398</span></td>
                                     <td>07/01/2018</td>
                                     <td class="VIP">VIP</td>
+                                    <td><a href="#">  <img src="img/icons/edit.png" class="table-edit" alt=""> </a></td>
                                 </tr>
 
                             </tbody>

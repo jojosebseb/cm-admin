@@ -347,7 +347,7 @@
             .function-module{
                 border: 1px solid #eee;
                 font-size: 14px;
-                padding: 7px 18px;
+                padding: 7px 7px;
                 cursor: pointer;
                 background: #eee;
                 margin-left: 10px;
@@ -360,6 +360,16 @@
             .add{
                 background: #1e2f4e;
                 color: rgba(255, 255, 255, 0.9);
+                display: flex;
+                align-items: center;
+                img{
+                    filter: invert(1);
+                    display: block;
+                    margin-right: 5px;
+                    width: 10px;
+                }
+
+
             }
 
         }
@@ -380,6 +390,11 @@
     padding: 30px;
     text-align: left;
     font-size: 14px;
+    .table-edit{
+        max-width: 15px;
+        display: block;
+        margin: auto;
+    }
     .dataTables_wrapper{
         display: flex;
         flex-wrap: wrap;
@@ -425,12 +440,12 @@
         }
         td{
             color: rgba(3, 6, 31, 0.95);
-            padding: 11px 10px;
+            padding: 11px 8px;
             border-left: 1px solid $table-border;
             border-bottom: 1px solid $table-border;
         }
         th{
-            padding: 13px 10px;
+            padding: 13px 8px;
             border-left: 1px solid $table-border;
             border-bottom: 1px solid $table-border;
             cursor: pointer;
@@ -490,6 +505,9 @@
     }
     .confirmed{
         background: rgb(140, 207, 151);
+    }
+    .status{
+        color: white;
     }
     .VIP{
         background: rgb(80, 91, 168);
@@ -600,6 +618,9 @@
         transform: translate(-50%, -50%);
         border-radius: 5px;
     }
+}
+.addTransBtn{
+    cursor: pointer;
 }
 #addTransactionForm{
     max-width: 500px;
