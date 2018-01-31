@@ -435,10 +435,12 @@
         border-bottom-left-radius: 0;
     }
     tr{
+        background: white;
         td:first-child, th:first-child{
             border-left: 0;
         }
         td{
+
             color: rgba(3, 6, 31, 0.95);
             padding: 11px 8px;
             border-left: 1px solid $table-border;
