@@ -1,6 +1,6 @@
 
 $('#transactionTable').DataTable( {
-    "order": [[ 4, "desc" ]]
+    "order": [[ 5, "desc" ]]
 } );
 
 $('#memberTable').DataTable( {
